@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111310" id="meta-theme-color">
+  <meta name="color-scheme" content="dark" id="meta-color-scheme">
+  <meta name="description" content="Hardware Haven is the personal portfolio of Nyi Thu Yein Tun, a PC builder and IT technician focused on custom builds, hardware troubleshooting, and practical support.">
+  <meta property="og:title" content="Hardware Haven — Nyi Thu Yein Tun">
+  <meta property="og:description" content="PC building, hardware troubleshooting, and practical IT support. Meet Nyi Thu Yein Tun.">
+  <meta property="og:image" content="./assets/og-image.jpg">
+  <meta property="og:type" content="website">
+  <title>Hardware Haven — Nyi Thu Yein Tun</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c5f664'/%3E%3Cpath d='M9 8v16M23 8v16M9 16h14' stroke='%23111310' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Myanmar:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <!-- Prevents theme and language flash on reload -->
+  <script>
+    try { 
+      if (localStorage.getItem('hh-language') === 'my') document.documentElement.lang = 'my';
+      const savedTheme = localStorage.getItem('hh-theme');
+      const isLight = savedTheme === 'light' || (!savedTheme && window.matchMedia('(prefers-color-scheme: light)').matches);
+      if (isLight) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById('meta-theme-color').content = '#f4f6f0';
+        document.getElementById('meta-color-scheme').content = 'light';
+      }
+    } catch {}
+  </script>
+  
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#home" aria-label="Hardware Haven home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 5v14M17 5v14M7 12h10" stroke="currentColor" stroke-width="3"/></svg></span><span>HARDWARE<br>HAVEN<span class="brand-period">.</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="#skills" data-i18n="navSkills">What I do</a><a href="#workbench" data-i18n="navWorkbench">Workbench</a><a href="#about" data-i18n="navAbout">About me</a></nav>
+      <div class="header-controls" role="group" aria-label="Language and theme">
+        <button type="button" class="theme-toggle" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <div class="language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="my" aria-pressed="false" lang="my">မြန်မာ</button></div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-line" aria-hidden="true"></span><span data-i18n="heroEyebrow">PC BUILDER / IT TECHNICIAN</span></p>
+        <h1 id="hero-title"><span data-i18n="heroOne">Your PC.</span><br><span class="accent" data-i18n="heroTwo">Built with care.</span></h1>
+        <p class="hero-description" data-i18n="heroBody">I'm Nyi Thu Yein Tun. I build PCs, solve hardware problems, and make technology easier to use. Good parts matter. Getting the details right matters just as much.</p>
+        <div class="hero-actions"><a class="button primary" href="#skills" data-i18n="heroCta">Explore my skills</a><a class="text-link" href="#about" data-i18n="heroSecondary">Meet the builder</a></div>
+        <div class="hero-footnote"><span class="mono">01 —</span><span data-i18n="heroNote">HARDWARE FIRST. PEOPLE ALWAYS.</span></div>
+      </div>
+      <figure class="hero-visual">
+        <div class="image-frame"><img src="./assets/hardware-hero.webp" width="1448" height="1086" alt="Illustrative custom PC with a dark case and soft lime lighting" fetchpriority="high"><span class="image-corner top" aria-hidden="true"></span><span class="image-corner bottom" aria-hidden="true"></span><span class="image-stamp mono" aria-hidden="true">HH / BUILD STUDY 01</span></div>
+        <figcaption><span data-i18n="imageCaption">A little precision goes a long way.</span><span class="image-credit" data-i18n="imageCredit">Illustrative build concept</span></figcaption>
+      </figure>
+    </section>
+    <div class="specialties"><div class="wrap specialty-inner"><span data-i18n="stripOne">CUSTOM BUILDS</span><span class="strip-cross" aria-hidden="true">+</span><span data-i18n="stripTwo">HARDWARE SUPPORT</span><span class="strip-cross" aria-hidden="true">+</span><span data-i18n="stripThree">PRACTICAL PROBLEM-SOLVING</span></div></div>
+    <section class="skills section-light" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow" data-i18n="skillsEyebrow">01 / WHAT I DO</p><h2 id="skills-title" data-i18n="skillsTitle">The right setup.<br>The right support.</h2><p class="section-intro" data-i18n="skillsIntro">From choosing compatible parts to finding out why a computer won't start, I enjoy the hands-on work that makes a setup reliable.</p></div>
+        <div class="service-list">
+          <article class="service-row"><span class="service-number mono">01</span><div><h3 data-i18n="serviceOne">Custom PC building</h3><p data-i18n="serviceOneBody">Component selection, assembly, cooling, and clean cable management — with the way you use your PC in mind.</p></div><div class="service-tags"><span data-i18n="tagGaming">Gaming</span><span data-i18n="tagEveryday">Everyday use</span></div><svg class="service-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="8" y="4" width="16" height="24" rx="2"/><path d="M12 9h8M12 13h8M12 23h3"/></svg></article>
+          <article class="service-row"><span class="service-number mono">02</span><div><h3 data-i18n="serviceTwo">Hardware troubleshooting</h3><p data-i18n="serviceTwoBody">System diagnostics and practical problem-solving for PCs and laptops, with clear explanations along the way.</p></div><div class="service-tags"><span data-i18n="tagDiagnostics">Diagnostics</span><span data-i18n="tagRepair">Repairs</span></div><svg class="service-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M20 5a7 7 0 0 0-9 9L4 21a4 4 0 0 0 6 6l7-7a7 7 0 0 0 9-9l-5 5-5-5 4-6Z"/></svg></article>
+          <article class="service-row"><span class="service-number mono">03</span><div><h3 data-i18n="serviceThree">Upgrades & system setup</h3><p data-i18n="serviceThreeBody">RAM and storage upgrades, operating-system installation, and configuration to help an existing computer work better.</p></div><div class="service-tags"><span>RAM / SSD</span><span data-i18n="tagSetup">System setup</span></div><svg class="service-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="4" y="10" width="24" height="12" rx="2"/><path d="M9 10V6M16 10V6M23 10V6M9 22v4M16 22v4M23 22v4M9 14v4M16 14v4M23 14v4"/></svg></article>
+          <article class="service-row"><span class="service-number mono">04</span><div><h3 data-i18n="serviceFour">Everyday IT support</h3><p data-i18n="serviceFourBody">Helping people with computer setup, software, and everyday technical issues. Patient support, in English or Burmese.</p></div><div class="service-tags"><span data-i18n="tagPeople">People first</span><span data-i18n="tagBilingual">Bilingual</span></div><svg class="service-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="3" y="5" width="26" height="18" rx="2"/><path d="M11 28h10M16 23v5M9 14l4 4 10-9"/></svg></article>
+        </div>
+      </div>
+    </section>
+    <section class="workbench wrap section-space" id="workbench" aria-labelledby="workbench-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="workEyebrow">02 / ON MY WORKBENCH</p><h2 id="workbench-title" data-i18n="workTitle">Curiosity doesn't<br>stop at hardware.</h2><p class="section-intro" data-i18n="workIntro">I also explore software and game development. These are learning projects I've been working through — a place to practice, experiment, and keep improving.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-top"><span class="project-label mono">WEB / 01</span><span class="project-status" data-i18n="projectStatus">Learning project</span></div><div class="project-symbol" aria-hidden="true">{ }</div><h3 data-i18n="posTitle">Point-of-sale system</h3><p data-i18n="posBody">Exploring how staff, products, customers, and invoices fit together in a practical PHP and MySQL application.</p><div class="project-stack"><span>PHP</span><span>MySQL</span></div></article>
+        <article class="project-card"><div class="project-top"><span class="project-label mono">GAME / 02</span><span class="project-status" data-i18n="projectStatus">Learning project</span></div><div class="project-symbol" aria-hidden="true">C#</div><h3 data-i18n="unityTitle">Unity game experiments</h3><p data-i18n="unityBody">Learning through tank movement, camera controls, and small game mechanics built with Unity and C#.</p><div class="project-stack"><span>Unity</span><span>C#</span></div></article>
+        <article class="project-card"><div class="project-top"><span class="project-label mono">WEB / 03</span><span class="project-status" data-i18n="projectStatus">Learning project</span></div><div class="project-symbol" aria-hidden="true">&lt;/&gt;</div><h3 data-i18n="clinicTitle">Clinic management app</h3><p data-i18n="clinicBody">Exploring a web-based clinic system, including sign-in, database access, and the connection between a frontend and backend.</p><div class="project-stack"><span>React</span><span>Supabase</span></div></article>
+      </div>
+    </section>
+    <section class="approach" aria-labelledby="approach-title"><div class="wrap approach-inner"><div><p class="eyebrow" data-i18n="approachEyebrow">HOW I THINK</p><h2 id="approach-title" data-i18n="approachTitle">Understand.<br>Build. Check.</h2></div><ol class="approach-list"><li><span class="mono">01</span><div><h3 data-i18n="stepOne">Start with the person</h3><p data-i18n="stepOneBody">What do you use your computer for? What is getting in your way? A useful solution starts there.</p></div></li><li><span class="mono">02</span><div><h3 data-i18n="stepTwo">Get the details right</h3><p data-i18n="stepTwoBody">Think through compatibility, assembly, and setup. Small decisions make a difference.</p></div></li><li><span class="mono">03</span><div><h3 data-i18n="stepThree">Explain it clearly</h3><p data-i18n="stepThreeBody">Keep the conversation simple, so people understand their setup and feel comfortable using it.</p></div></li></ol></div></section>
+    <section class="about wrap section-space" id="about" aria-labelledby="about-title">
+      <div class="about-title"><p class="eyebrow" data-i18n="aboutEyebrow">03 / THE PERSON BEHIND THE PC</p><h2 id="about-title" data-i18n="aboutTitle">Hi, I'm<br>Nyi Thu Yein Tun<span class="accent">.</span></h2><p class="about-role" data-i18n="aboutRole">PC builder. IT technician. Always learning.</p></div>
+      <div class="about-copy"><p class="about-lead" data-i18n="aboutLead">PC building is the work I want to keep getting better at.</p><p data-i18n="aboutBody">With a Computer Science background and a hands-on interest in hardware, I enjoy turning separate parts into a setup that makes sense. I also bring customer-support experience and a patient approach to helping people with technology.</p><p data-i18n="aboutBackground">I've helped manage computer classes and configure laptops for students. Making computers accessible and easy to use matters to me as much as getting them to work.</p><div class="profile-facts"><div><span data-i18n="factFocus">MAIN FOCUS</span><strong data-i18n="factFocusValue">PC building & IT support</strong></div><div><span data-i18n="factLanguages">LANGUAGES</span><strong data-i18n="factLanguagesValue">English & Burmese</strong></div><div><span data-i18n="factLearning">EXPLORING</span><strong data-i18n="factLearningValue">Web development & Unity</strong></div></div><a class="button outline" id="profile-download" href="./assets/Nyi-Thu-Yein-Tun-Profile.pdf" download="Nyi-Thu-Yein-Tun-Profile.pdf"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg><span data-i18n="download">Download my profile</span></a><span class="download-note" data-i18n="downloadNote">A PDF summary of my skills and experience.</span></div>
+    </section>
+    <section class="closing"><div class="wrap closing-inner"><p data-i18n="closingOne">Thoughtful builds.</p><p class="accent" data-i18n="closingTwo">Practical solutions.</p><span class="closing-label mono" data-i18n="closingLabel">THAT'S HARDWARE HAVEN.</span></div></section>
+  </main>
+  <footer class="wrap site-footer"><a class="footer-brand" href="#home">HARDWARE HAVEN<span class="accent">.</span></a><p>© 2026 Nyi Thu Yein Tun</p><a href="#home" data-i18n="backTop">Back to top</a></footer>
+</body>
+</html>
